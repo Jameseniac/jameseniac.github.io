@@ -1,0 +1,248 @@
+html {
+	margin: 0 0 0 0;
+	padding: 0;
+	}
+	
+body { 
+	font: 100% Monospace, sans-serif;
+	line-height: 1.88889;
+	color: #555753; 
+	margin: 0; 
+	padding: 0;
+	background-color: #CAFCD8;
+
+	}
+	
+.page-wrapper { 
+	margin: 0; 
+	position: static;
+	}
+
+.intro { 
+	text-align: center;
+	}	
+	
+.summary {
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	width: 700px;
+	float: center;
+	}
+.summary p {
+	font: italic 1.3em/2.2 georgia; 
+	
+	}
+
+.preamble {
+	margin-top: 20px;
+	padding: 30px 0px 30px 0px;
+	background-image: url("IMG_326715.jpg") ;
+	opacity:0.8;
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+.preamble p{	
+	margin: 0 auto;
+	font-size:22px;
+	font-weight: bold;
+	font-family : Arial, sans-serif; margin;
+	color: Black;
+	line-height: 300%;
+	width: 900px;
+	text-align: center;
+	text-shadow: 1px 1px white;
+	}
+	
+.preamble h3{	
+	font-size:35px;
+	color: black;
+	text-shadow: 2px 3px white;
+	}
+	
+.supporting h3 {
+	border-bottom: 2px solid #04BFBF;
+	border-width: medium;
+}	
+
+#zen-supporting {
+	padding-left: 50px; 
+	margin-bottom: 40px;
+	width: 900px;
+	float : left;
+}
+
+.explanation {
+	margin: 50px 0px 0px 20px;
+	padding : 0px 10px 0px 10px;
+	background-color : #FFE9A3;
+	border: 0px solid #04BFBF;
+	border-radius: 40px;
+	
+}
+
+.explanation:hover {
+	background-color: #F5F4E1;
+	transition: background-color .2s ease-in;
+	box-shadow: 5px 5px 10px #91AA9D;
+}
+.participation {
+	margin: 30px 0px 0px 20px;
+	padding : 0px 10px 0px 10px;
+	background-color : #FFE9A3;
+	border: 0px solid #04BFBF;
+	border-radius: 40px;
+	
+}
+
+.participation:hover {
+	background-color: #F5F4E1;
+	transition: background-color .2s ease-in;
+	box-shadow: 5px 5px 10px #91AA9D;
+}
+
+.benefits {
+	margin: 30px 0px 0px 20px;
+	padding : 0px 10px 0px 10px;
+	background-color : #FFE9A3;
+	border: 0px solid #FFE9A3;
+	border-radius: 40px;
+	
+}
+
+.benefits:hover {
+	background-color: #F5F4E1;
+	transition: background-color .2s ease-in;
+	box-shadow: 5px 5px 10px #91AA9D;
+}
+
+.requirements {
+	margin: 30px 0px 0px 20px;
+	padding : 0px 10px 0px 10px;
+	background-color : #FFE9A3;
+	border: 0px solid #04BFBF;
+	border-radius: 40px;
+	
+}
+
+.requirements:hover {
+	background-color: #F5F4E1;
+	transition: background-color .2s ease-in;
+	box-shadow: 5px 5px 10px #91AA9D;
+}
+
+.sidebar {
+	margin: 50px 45px 0px 0px; 
+	position: static; 
+	
+	border: 0px solid #04BFBF;
+	padding : 0px 10px 0px 10px;
+	border-radius: 40px;
+	background-color: #BEEB9F;
+	
+	float: right;
+}
+
+.sidebar:hover {
+	background-color: #F5F4E1;
+	transition: background-color .2s ease-in;
+	box-shadow: 5px 5px 10px #91AA9D;
+}
+
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #2185C5;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #E74C3C;
+	}
+a:hover, a:focus{ 
+	text-decoration: underline; 
+	color: #E74C3C;
+	}
+	
+a:active { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #FFF6E5;
+	}	
+abbr {
+	border-bottom: none;
+	}
+
+header {
+	background-image: url("22.jpg") ;
+	background-repeat: no-repeat;
+	background-size: 100%
+	padding-top: 0px;
+	height: 500px;
+	margin-top: 0px;
+}
+
+h1, h2 {
+  padding: 0 10%;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  
+}
+h1 {
+  padding-top: 0;
+  padding-bottom: 5px;
+  border-bottom: none;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 4.4em;
+  text-transform: uppercase;
+
+}
+
+h2 {
+  display: block;
+  padding-top: 3px;
+  padding-bottom: 30px;
+  border-top: none;
+  color: rgba(255,255,255,0.6);
+  font-size: 1.9em;
+  font-style: italic;
+}
+
+h3 {
+  margin: 30px 0px 30px 0px;
+  color: #2e484c;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.8em;
+  color: #468966;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+
+footer {
+	margin: 30px 0px 0px 20px; 
+	background: #FF8C00; 
+	text-align: center;
+	color:#fff; 
+	padding:1em 5%; 
+	border: 0px solid #04BFBF;
+	padding : 0px 10px 0px 10px;
+	border-radius: 40px;
+	box-shadow: inset 0 0 30px #D90000;	
+		}
+	
+footer a { 
+	margin-right:2em; }
+	
+footer:hover {
+	background-color: #FFFF9D;
+	transition: background-color .2s ease-in;
+}	
+.requirements p:last-child{
+	border-top: 5px dotted #04756F;
+	font-family: Helvetica, Arial, sans-serif; margin;
+	font-size: 20px;
+	color: #FF8C00;
+}	
