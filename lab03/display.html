@@ -1,0 +1,148 @@
+<html>
+
+<head>
+
+ <title>Display Table</title>
+<style>	
+html{
+	background-color: #F3FFE2;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+</style>
+</head>
+
+<body>
+   
+<TABLE border=4 align=center>
+            <CAPTION> <h2>Information Table</h2> </CAPTION>
+            <TR>
+                     <TH> Title </TH>
+					 <TH> Information </TH>
+            </TR> 
+            <TR>
+					 <TD> <p>Firstname</p></TD>
+                     <TD> <p id="fname"></p></TD>
+             </TR>
+             <TR>
+                     <TD> <p>Lastname</p></TD>
+                     <TD> <p id="lname"></p></TD>
+             </TR>
+			  <TR>
+                    <TD> <p>House Number</p></TD>
+                     <TD> <p id="hnum"></p></TD>
+             </TR>
+			  <TR>
+                    <TD> <p>Street</p></TD>
+                     <TD> <p id="st"></p></TD>
+             </TR>
+			  <TR>
+                    <TD> <p>City</p></TD>
+                     <TD> <p id="ct"></p></TD>
+             </TR>
+			  <TR>
+                    <TD> <p>Province</p></TD>
+                     <TD> <p id="pv"></p></TD>
+             </TR>
+			  <TR>
+                    <TD> <p>Zipcode</p></TD>
+                     <TD> <p id="zc"></p></TD>
+             </TR>
+			  <TR>
+                    <TD> <p>Phone Number</p></TD>
+                     <TD> <p id="pnum"></p></TD>
+             </TR>
+			  <TR>
+                    <TD> <p>Cell Phone Number</p></TD>
+                     <TD> <p id="mnum"></p></TD>
+             </TR> <TR>
+                    <TD> <p>Birthday</p></TD>
+                     <TD> <p id="bd"></p></TD>
+             </TR>
+			  <TR>
+                    <TD> <p>Citizenship Number</p></TD>
+                     <TD> <p id="cz"></p></TD>
+             </TR>
+			  <TR>
+                    <TD> <p>Zodiac Sign</p></TD>
+                     <TD> <p id="zs"></p></TD>
+             </TR>
+			  <TR>
+                    <TD> <p>Zodiac Year</p></TD>
+                     <TD> <p id="zy"></p></TD>
+             </TR>
+			  <TR>
+                    <TD> <p>Birthday of Week</p></TD>
+                    <TD> <p id="bdow"></p></TD>
+             </TR>
+		
+</TABLE>      
+   
+   
+   
+   
+   
+<script>
+ window.onload=function show() {
+    var firstname=getUrlVars()["Firstname"];
+	var lastname=getUrlVars()["Lastname"];
+	var houseNumber=getUrlVars()["House+Number"];
+	var street=getUrlVars()["Street"];
+	var city=getUrlVars()["City"];
+	var province=getUrlVars()["Province"];
+	var zipcode=getUrlVars()["Zipcode"];
+	var phonenumber=getUrlVars()["Phone+Number"];
+	var mobilenumber=getUrlVars()["Mobile+Number"];
+	var birthday=getUrlVars()["Birthday"];
+	var citizen=getUrlVars()["Citizenship+Number"];
+	var zos=getUrlVars()["Zodiac+Sign"];
+	var zoy=getUrlVars()["Zodiac+Year"];
+	var birthdow=getUrlVars()["Birth+Day+of+Week"];
+
+	document.getElementById("fname").innerHTML = firstname;
+	document.getElementById("lname").innerHTML = lastname;
+	document.getElementById("hnum").innerHTML = houseNumber;
+	document.getElementById("st").innerHTML = street;
+	document.getElementById("ct").innerHTML = city;
+	document.getElementById("pv").innerHTML = province;
+	document.getElementById("zc").innerHTML = zipcode;
+	document.getElementById("pnum").innerHTML = "+" + phonenumber.substring(3,6) +"-"+ phonenumber.substring(6,9) +"-"+phonenumber.substring(9);
+	document.getElementById("mnum").innerHTML = "+" + mobilenumber.substring(3,7) +"-"+ mobilenumber.substring(7,10) +"-"+mobilenumber.substring(10);
+	document.getElementById("bd").innerHTML = birthday;
+	document.getElementById("cz").innerHTML = citizen;
+	document.getElementById("zs").innerHTML = zos;
+	document.getElementById("zy").innerHTML = zoy;
+	document.getElementById("bdow").innerHTML = birthdow;
+	
+    }
+	
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+</script> 
+
+
+
+
+</body>
+</html>

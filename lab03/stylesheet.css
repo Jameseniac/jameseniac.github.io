@@ -1,0 +1,496 @@
+html{
+background-color: lightgray;
+
+}
+
+  .displaytext{opacity: 0.5; filter: alpha(opacity = 50);}
+   .normaltext{opacity: 1; filter: alpha(opacity = 100); }
+
+body {
+	width:100%
+}
+
+h1 {
+	text-align: center;
+}
+
+input[type=text], input[type=date],select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=reset]:rest {
+    background-color: #45a049;
+}
+
+
+input[type=reset] {
+    width: 80%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 0px 0px 80px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset]:hover {
+    background-color: #45a049;
+}
+
+input[type=submit]:rest {
+    background-color: #45a049;
+}
+
+input[type=submit] {
+    width: 80%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 0px 0px 80px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=button]:rest {
+    background-color: #45a049;
+}
+
+input[type=button] {
+    width:80%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 0px 0px 80px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+div {
+    border-radius: 5px;
+    //background-color: #FFFF9D;
+    padding: 40px;
+	width:850px;
+	margin:auto;
+	background: url(IMG_184558.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+
+}
+
+label,input {
+
+	display:block;
+}
+
+.radio, .radi, .rad {
+    opacity: 0;
+    position: absolute;
+}
+
+
+
+.label1 {
+    background: url(zodiacS/aries.png);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 160px;
+    height: 200px;
+    display: block;
+    float: left;
+    margin: 10px;
+	background-color: #F2594B;
+}
+
+.label2 {
+    background: url(zodiacS/taurus.png);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 160px;
+    height: 200px;
+    display: block;
+    float: left;
+    margin: 10px;
+	background-color: #F2594B;
+}
+
+.label3 {
+    background: url(zodiacS/gemini.png);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 160px;
+    height: 200px;
+    display: block;
+    float: left;
+    margin: 10px;
+	background-color: #F2594B;
+}
+
+.label4 {
+    background: url(zodiacS/cancer.png);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 160px;
+    height: 200px;
+    display: block;
+    float: left;
+    margin: 10px;
+	background-color: #F2594B;
+}
+
+.label5 {
+    background: url(zodiacS/leo.png);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 160px;
+    height: 200px;
+    display: block;
+    float: left;
+    margin: 10px;
+	background-color: #F2594B;
+}
+
+.label6 {
+    background: url(zodiacS/virgo.png);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 160px;
+    height: 200px;
+    display: block;
+    float: left;
+    margin: 10px;
+	background-color: #F2594B;
+}
+
+.label7 {
+    background: url(zodiacS/libra.png);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 160px;
+    height: 200px;
+    display: block;
+    float: left;
+    margin: 10px;
+	background-color: #F2594B;
+}
+
+.label8 {
+    background: url(zodiacS/scorpio.png);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 160px;
+    height: 200px;
+    display: block;
+    float: left;
+    margin: 10px;
+	background-color: #F2594B;
+}
+
+.label9 {
+    background: url(zodiacS/sagittarius.png);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 160px;
+    height: 200px;
+    display: block;
+    float: left;
+    margin: 10px;
+	background-color: #F2594B;
+	
+}
+
+.label10{
+    background: url(zodiacS/capricorn.png);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 160px;
+    height: 200px;
+    display: block;
+    float: left;
+    margin: 10px;
+	background-color: #F2594B;
+}
+
+.label11 {
+    background: url(zodiacS/aquarius.png);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 160px;
+    height: 200px;
+    display: block;
+    float: left;
+    margin: 10px;
+	background-color: #F2594B;
+}
+
+.label12 {
+    background: url(zodiacS/pisces.png);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 160px;
+    height: 200px;
+    display: block;
+    float: left;
+    margin: 10px;
+	background-color: #F2594B;
+}
+
+.labe1 {
+    background: url(zodiacY/rat.jpg);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 95px;
+    height: 93px;
+    display: block;
+    float: left;
+    margin: 10px;
+	
+}
+
+.labe2 {
+    background: url(zodiacY/ox.jpg);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 95px;
+    height: 93px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+.labe3 {
+    background: url(zodiacY/tiger.jpg);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 95px;
+    height: 93px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+.labe4 {
+    background: url(zodiacY/rabbit.jpg);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 95px;
+    height: 93px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+.labe5 {
+    background: url(zodiacY/dragon.jpg);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 95px;
+    height: 93px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+.labe6 {
+    background: url(zodiacY/snake.jpg);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 95px;
+    height: 93px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+.labe7 {
+    background: url(zodiacY/horse.jpg);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 95px;
+    height: 93px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+.labe8 {
+    background: url(zodiacY/goat.jpg);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 95px;
+    height: 93px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+.labe9 {
+    background: url(zodiacY/monkey.jpg);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 95px;
+    height: 93px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+.labe10{
+    background: url(zodiacY/rooster.jpg);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 95px;
+    height: 93px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+.labe11 {
+    background: url(zodiacY/dog.jpg);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 95px;
+    height: 93px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+.labe12 {
+    background: url(zodiacY/pig.jpg);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 95px;
+    height: 93px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+.lab1 {
+    background: url(weekday/monday.jpg);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 70px;
+    height: 190px;
+    display: block;
+    float: left;
+    margin: 10px 10px 10px 30px;
+
+}
+
+.lab2 {
+    background: url(weekday/tuesday.jpg);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 70px;
+    height: 190px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+.lab3 {
+    background: url(weekday/wednesday.jpg);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 70px;
+    height: 190px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+.lab4 {
+    background: url(weekday/thursday.jpg);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 70px;
+    height: 190px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+.lab5 {
+    background: url(weekday/friday.jpg);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 70px;
+    height: 190px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+.lab6 {
+    background: url(weekday/saturday.jpg);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 70px;
+    height: 190px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+.lab7 {
+    background: url(weekday/sunday.jpg);
+    text-indent: -999em;
+    border: 10px solid #ACF0F2;
+    width: 70px;
+    height: 190px;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+
+#zs input[type="radio"]:checked + label {
+    border: 10px solid #2980B9;
+}
+
+#zy input[type="radio"]:checked + label {
+    border: 10px solid #2980B9;
+}
+
+#bd input[type="radio"]:checked + label {
+    border: 10px solid #2980B9;
+	
+}
+
+#zs, #zy, #bd {
+	margin : 10px 0px 10px 0px;
+	opacity:0.98;
+	background-color: #29D9C2;
+	border-radius: 5px;
+}
+
+
