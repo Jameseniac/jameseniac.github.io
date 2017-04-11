@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LAB04 คำขวัญประจำจังหวัด</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js">
+    </script>
+</head>
+
+<body>
+    <div id='header'>
+        <form name='myForm' id="form_id">
+            <label for="fname">Firstname</label>
+            <input type="text" id="fname" name="Firstname">
+
+            <label for="lname" id='lname_l'>Lastname</label>
+            <input type="text" id="lname" name="Lastname">
+
+            <label for="birthday" id='bd_l'>Birthday</label>
+            <input type="date" id="birthday" name="Birthday">
+
+
+            <input type="radio" class="radio" id="male" value="Male" name="Gender" />
+            <label for="male" class="maleC">Male</label>
+            <input type="radio" class="radio" id="female" value="Female" name="Gender" />
+            <label for="female" class="femaleC">Female</label>
+
+
+            <label for="province" id='pl'>Province</label>
+            <input type="text" id="province" name="Province" list="provinceName" />
+            <datalist id="provinceName">
+
+            </datalist></br>
+
+            <input type="button" id="btn" value="Submit" onclick="validate()" />
+            <input type="reset" value="Reset">
+        </form>
+        <div id="pdiv" style="display:none">
+            <h1 id="h1_greet" class="greet_c"></h1></div>
+        <div id="div1" style="display:none">
+            <h1 id="greet" class="greet_c">ยินดีต้อนรับ</h1></div>
+        <div id="div2" style="display:none">
+            <img id="sign" src=""></div>
+        <div id="div3" style="display:none">
+            <h2 class="content"></h2>
+            <h2 id="motto" class="content">not found</h2></div>
+
+
+    </div>
+
+
+</body>
+
+</html>
