@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lab3 Validate by JavaScript</title>
+<link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+<script src="script.js"> </script>
+
+<h1>LAB3 : Validate by JavaScript</h1>
+<div>
+  <form name="myForm" action="display.html" method="GET" onsubmit="return check()">
+  
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="Firstname" >
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="Lastname">
+
+	<h3>Address:</h3>
+	<label for="housenum">House Number</label>
+    <input type="text" id="housenum" name="House Number">
+	
+	<label for="street">Street</label>
+    <input type="text" id="street" name="Street">
+	
+	<label for="city">City</label>
+	<input type="text" id="city" name="City" list="cityName"/>
+		<datalist id="cityName">
+		<option value="Bangna">Bangna</option>
+		<option value="Bangken">Bangken</option>
+		<option value="Phra Nakhon">Phra Nakhon</option>
+		<option value="Khlong San">Khlong San</option>
+		<option value="Lat Phrao">Lat Phrao</option>
+		<option value="Phaya Thai">Phaya Thai</option>
+		</datalist>
+	
+	<label for="province">Province</label>
+	<input type="text" id="province" name="Province" list="provinceName"/>
+		<datalist id="provinceName">
+		<option value="Bangkok">Bangkok</option>
+		<option value="Ang Thong">Ang Thong</option>
+		<option value="Buriram">Buriram</option>
+		<option value="Chai Nat">Chai Nat</option>
+		<option value="Chiang Mai">Chiang Mai</option>
+		<option value="Chiang Rai">Chiang Rai</option>
+		<option value="Chonburi">Chonburi</option>
+		<option value="Kalasin">Kalasin</option>
+		<option value="Lamphun">Lamphun</option>
+		</datalist>
+	
+	<label for="zipzode">Zipcode</label>
+    <input type="text" id="zipcode" name="Zipcode">
+	
+	 <label for="country">State</label>
+    <select id="country" name="country">
+	 <option value="Thailand">Thailand</option>
+      <option value="Australia">Australia</option>
+      <option value="Canada">Canada</option>
+      <option value="USA">USA</option>
+    </select>
+  
+	
+	<label for="phonenumber">Phone Number</label>
+    <input type="text" id="phonenumber" name="Phone Number" value="+662"> 
+
+	<label for="mobilenumber">Cell Phone Number</label>
+    <input type="text" id="mobilenumber" name="Mobile Number" value="+66" >
+	
+	<label for="birthday">Birthday</label>
+    <input type="date" id="birthday" name="Birthday">
+	
+	<label for="citizen">Citizenship Number</label>
+    <input type="text" id="citizen" name="Citizenship Number"><br>
+	
+	
+	 <fieldset id="zs">
+	 <h4 id="zss">Zodiac Sign<h4/>
+	<input type="radio" class="radio"  id="ex1" value="Aries" name="Zodiac Sign" />
+    <label for="ex1" class="label1">Zodiac 1</label>
+    <input type="radio" class="radio"  id="ex2" value="Taurus" name="Zodiac Sign"/>
+    <label for="ex2" class="label2">Zodiac 2</label>
+	 <input type="radio" class="radio" id="ex3" value="Gemini" name="Zodiac Sign"/>
+    <label for="ex3" class="label3">Zodiac 3</label>
+	 <input type="radio" class="radio"  id="ex4" value="Cancer" name="Zodiac Sign"/>
+    <label for="ex4" class="label4">Zodiac 4</label>
+	 <input type="radio" class="radio"id="ex5" value="Leo" name="Zodiac Sign"/>
+    <label for="ex5" class="label5">Zodiac 5</label>
+	 <input type="radio" class="radio"  id="ex6" value="Virgo" name="Zodiac Sign" />
+    <label for="ex6" class="label6">Zodiac 6</label>
+	 <input type="radio" class="radio"  id="ex7" value="Libra" name="Zodiac Sign"/>
+    <label for="ex7" class="label7">Zodiac 7</label>
+	 <input type="radio" class="radio"  id="ex8" value="Scorpio" name="Zodiac Sign"/>
+    <label for="ex8" class="label8">Zodiac 8</label>
+	 <input type="radio" class="radio"  id="ex9" value="Sagittarius" name="Zodiac Sign"/>
+    <label for="ex9" class="label9">Zodiac 9</label>
+	 <input type="radio" class="radio"  id="ex10" value="Capricorn" name="Zodiac Sign"/>
+    <label for="ex10" class="label10">Zodiac 10</label>
+	 <input type="radio" class="radio" id="ex11" value="Aquarius" name="Zodiac Sign"/>
+    <label for="ex11" class="label11">Zodiac 11</label>
+	 <input type="radio" class="radio"  id="ex12" value="Pisces"name="Zodiac Sign" />
+    <label for="ex12" class="label12">Zodiac 12</label>
+	 </fieldset>
+	
+	
+	
+	<fieldset id="zy">
+	<h4 id="zyy">Zodiac Year<h4/>
+	<input type="radio" class="radi" id="zy1" value="Rat" name="Zodiac Year"  />
+    <label for="zy1" class="labe1">zy 1</label>
+    <input type="radio" class="radi" id="zy2" value="Ox" name="Zodiac Year"/>
+    <label for="zy2" class="labe2">zy 2</label>
+	 <input type="radio" class="radi" id="zy3" value="Tiger" name="Zodiac Year"/>
+    <label for="zy3" class="labe3">zy 3</label>
+	 <input type="radio" class="radi"  id="zy4" value="Rabbit" name="Zodiac Year"/>
+    <label for="zy4" class="labe4">zy 4</label>
+	 <input type="radio" class="radi"  id="zy5" value="Dragon" name="Zodiac Year"/>
+    <label for="zy5" class="labe5">zy 5</label>
+	 <input type="radio" class="radi"  id="zy6" value="Snake" name="Zodiac Year"/>
+    <label for="zy6" class="labe6">zy 6</label>
+	 <input type="radio" class="radi"  id="zy7" value="Horse" name="Zodiac Year"/>
+    <label for="zy7" class="labe7">zy 7</label>
+	 <input type="radio" class="radi"  id="zy8" value="Goat" name="Zodiac Year"/>
+    <label for="zy8" class="labe8">zy 8</label>
+	 <input type="radio" class="radi"  id="zy9" value="Monkey" name="Zodiac Year"/>
+    <label for="zy9" class="labe9">zy 9</label>
+	 <input type="radio" class="radi" id="zy10" value="Rooster" name="Zodiac Year"/>
+    <label for="zy10" class="labe10">zy 10</label>
+	 <input type="radio" class="radi" id="zy11" value="Dog" name="Zodiac Year"/>
+    <label for="zy11" class="labe11">zy 11</label>
+	 <input type="radio" class="radi"  id="zy12" value="Pig" name="Zodiac Year"/>
+    <label for="zy12" class="labe12">zy 12</label>
+   </fieldset>
+   
+   <fieldset id="bd">
+   <h4>Birth Day of Week</h4>
+
+   <input type="radio" class="rad"  id="bd1" value="Monday" name="Birth Day of Week"  />
+    <label for="bd1" class="lab1">Monday</label>
+    <input type="radio" class="rad" id="bd2" value="Tuesday" name="Birth Day of Week"/>
+    <label for="bd2" class="lab2">bd 2</label>
+	 <input type="radio" class="rad"  id="bd3" value="Wednesday" name="Birth Day of Week"/>
+    <label for="bd3" class="lab3">bd 3</label>
+	 <input type="radio" class="rad"  id="bd4" value="Thursday" name="Birth Day of Week"/>
+    <label for="bd4" class="lab4">bd 4</label>
+	 <input type="radio" class="rad" id="bd5" value="Friday" name="Birth Day of Week"/>
+    <label for="bd5" class="lab5">bd 5</label>
+	 <input type="radio" class="rad"  id="bd6" value="Saturday" name="Birth Day of Week"/>
+    <label for="bd6" class="lab6">bd 6</label>
+	 <input type="radio" class="rad" id="bd7" value="Sunday" name="Birth Day of Week"/>
+    <label for="bd7" class="lab7">bd 7</label>
+   </fieldset>
+   
+   
+   <input type="button" id="savee" value="Save" onclick="save();" />
+   <input type="reset" value="Reset">
+   <input type="submit" value="Submit" >
+  </form>
+</div>8u
+
+</body>
+</html>
