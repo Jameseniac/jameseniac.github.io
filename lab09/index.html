@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>LAB09 Vue.JS</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div id="div-app">
+        <a name="home"></a>
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+            <div class="container topnav">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand topnav" href="#">Festival Rewards</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#register">Register</a>
+                        </li>
+                        <li>
+                            <a href="#luckydraw">Lucky Draw</a>
+                        </li>
+                        <li>
+                            <a href="#history">History</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+
+        <!-- Header -->
+        <a name="about"></a>
+        <div class="intro-header">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-message">
+                            <h1>Happy Festival</h1>
+                            <h3>Good Luck&Have Fun</h3>
+                            <hr class="intro-divider">
+                            <ul class="list-inline intro-social-buttons">
+                                <li>
+                                    <a href="#register" class="btn btn-default btn-lg"> <span class="network-name">Register</span></a>
+                                </li>
+                                <li>
+                                    <a href="#luckydraw" class="btn btn-default btn-lg"> <span class="network-name">Lucky Draw</span></a>
+                                </li>
+                                <li>
+                                    <a href="#history" class="btn btn-default btn-lg"> <span class="network-name">History</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container -->
+
+        </div>
+        <!-- /.intro-header -->
+
+        <!-- Page Content -->
+
+        <a name="register"></a>
+        <div class="content-section-a">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Register</h2>
+
+                        <form>
+                            <div class="form-group">
+                                <input v-model="User.firstname" class="form-control" placeholder="firstname">
+                            </div>
+
+                            <div class="form-group">
+                                <input v-model="User.lastname" class="form-control" placeholder="lastname">
+                            </div>
+                            <button v-on:click="submit()" v-bind:disabled="(User.firstname == '' && User.lastname == '')" class="btn btn-primary">Submit</button>
+
+                        </form>
+
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <!-- <img class="img-responsive" src="img/ipad.png" alt=""> -->
+
+                        <h3>Number of User : {{userCounter}}</h3>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container -->
+
+        </div>
+        <!-- /.content-section-a -->
+        <a name="luckydraw"></a>
+        <div class="content-section-b">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6" style="margin-bottom:20px;">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Lucky Draw</h2>
+                        <p>need 5 users for start!</p>
+                        <button v-bind:disabled="(userCounter <5)" v-on:click="start=true" class="btn btn-primary" style="width:200px;">start</button>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div style="margin-left:auto;" v-if="start" >
+                <!-- Names : {{usr.firstname}}  {{usr.lastname}} -->
+
+                    <div class="gallery_product col-lg-2 col-md-3 col-sm-3 col-xs-6 filter hdpe">
+                        <img src="img/reward-bg.png" class="img-responsive" width="300" height="300" v-on:click="show1=true">
+                        <transition name="fade">
+                            <img src="img/novels.jpg" class="img-responsive" width="300" height="300" v-if="show1">
+                        </transition>
+                    </div>
+                    <div class="gallery_product col-lg-2 col-md-3 col-sm-3 col-xs-6 filter hdpe">
+                        <img src="img/reward-bg.png" class="img-responsive" width="300" height="300" v-on:click="show2=true">
+                        <transition name="fade">
+                            <img src="img/iphone7.png" class="img-responsive" width="300" height="300" v-if="show2">
+                        </transition>
+                    </div>
+                    <div class="gallery_product col-lg-2 col-md-3 col-sm-3 col-xs-6 filter hdpe">
+                        <img src="img/reward-bg.png" class="img-responsive" width="300" height="300" v-on:click="show3=true">
+                        <transition name="fade">
+                            <img src="img/ring.jpg" class="img-responsive" width="300" height="300" v-if="show3">
+                        </transition>
+                    </div>
+                    <div class="gallery_product col-lg-2 col-md-3 col-sm-3 col-xs-6 filter hdpe">
+                        <img src="img/reward-bg.png" class="img-responsive" width="300" height="300" v-on:click="show4=true">
+                        <transition name="fade">
+                            <img src="img/s8.jpg" class="img-responsive" width="300" height="300" v-if="show4">
+                        </transition>
+                    </div>
+                    <div class="gallery_product col-lg-2 col-md-3 col-sm-3 col-xs-6 filter hdpe">
+                        <img src="img/reward-bg.png" class="img-responsive" width="300" height="300" v-on:click="show5=true">
+                        <transition name="fade">
+                            <img src="img/helmet.jpg" class="img-responsive" width="300" height="300" v-if="show5">
+                        </transition>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- /.container -->
+
+        </div>
+        <!-- /.content-section-b -->
+
+        <a name="history"></a>
+        <div class="content-section-a">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">History</h2>
+
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container -->
+
+        </div>
+        <!-- /.content-section-a -->
+
+        <a name="contact"></a>
+        <div class="banner">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>Have a good time</h2>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /.container -->
+
+        </div>
+        <!-- /.banner -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="#register">Register</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="#luckydraw">Lucky Draw</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="#history">History  </a>
+                            </li>
+                        </ul>
+                        <p class="copyright text-muted small">Copyright &copy; Jameseniac 2014. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!--vue -->
+        <script src="js/vue.js"></script>
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
+
+<script>
+    var vm = new Vue({
+        el: "#div-app",
+        data: {
+            userCounter: 0,
+            show1: false,
+            show2: false,
+            show3: false,
+            show4: false,
+            show5: false,
+            start: false,
+            users : [],
+            User: {
+                firstname: "",
+                lastname: "",
+
+            }
+
+        },
+        methods: {
+            submit: function(number = 1) {
+                alert("success register");
+                this.userCounter += number;
+            this.users.push({firstname: User.firstname, lastname:User.lastname})
+
+            },
+            startgame: function() {
+                start = true;
+            }
+        },
+        filters: {
+
+        }
+    });
+</script>
